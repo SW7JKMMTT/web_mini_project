@@ -1,1 +1,1 @@
-# web_mini_project
+# The OG WEB Mini Project
