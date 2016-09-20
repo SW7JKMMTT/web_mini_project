@@ -3,11 +3,11 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.render('index', { title: 'Hello WEB World!' });
 });
 
-router.get('/memes', (req, res, next) => {
-    res.send('MEMES');
+router.get('/hello', (req, res, next) => {
+    res.send('<p>World</p>');
 });
 
 module.exports = router;
