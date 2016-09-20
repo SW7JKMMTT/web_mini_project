@@ -1,0 +1,14 @@
+extends layout
+
+block content
+    ul
+        each user in userList
+            li= user
+
+    h3 Add User
+    form(method="post")
+        div.input
+            span.label Name of the user:
+            input(type="text", name="user")
+        div.action
+            input(type="submit", value="Add!")
