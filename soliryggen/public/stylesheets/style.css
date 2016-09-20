@@ -11,8 +11,10 @@ span.strike-through {
   text-decoration:line-through;
 }
 
-span.mark {
-  padding-right:10px;
+div.container {
+  display: inline-block;
+  width: 2em;
+  text-align: center
 }
 
 ul {
@@ -22,11 +24,14 @@ ul {
   font-size: 20pt;
 }
 
-li {
-  padding-left: 16px;
-}
-
 div.input {
   cursor: pointer;
 }
 
+span.input {
+  padding: 1em;
+}
+
+span.action {
+  padding: 1em;
+}
