@@ -1,6 +1,6 @@
 /*
  * deliverable
- * 
+ *
  * Licensed under MIT License
  */
 module.exports = function (grunt) {

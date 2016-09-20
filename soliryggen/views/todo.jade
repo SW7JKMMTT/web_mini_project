@@ -1,0 +1,19 @@
+extends layout
+
+block content
+    ul
+        -var index = 0
+        each task in taskList
+            li
+                form(method="post")
+                    div.input(onclick="this.parentElement.submit()")
+                        span.mark= (task.done ? "✔ " : "🐝 " )
+                        span.label(class=task.done ? "strike-through" : "")= task.task
+                        input(type="hidden", name="strike", value="#{index++}")
+
+    form(method="post")
+        h3 New Task
+            div.input
+                input(type="text", name="task")
+            div.action
+                input(type="submit", value="Add!")
